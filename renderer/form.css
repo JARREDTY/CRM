@@ -1,0 +1,22 @@
+input {
+    background-color: rgba(0, 0, 0, 0.507);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(219, 219, 219, 0.233);
+    padding: 5px 10px;
+}
+
+button[type=submit] {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+#basic-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.089) !important;
+}

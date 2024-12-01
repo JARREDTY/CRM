@@ -1,0 +1,10 @@
+.main-container {
+    background-color: rgb(23, 4, 68);
+    margin-top: 70px;
+    height: 610px;
+    width: 1370px;
+    padding: 20px;
+    overflow-y: auto;
+    color: rgba(255, 255, 255, 0.95);
+}
+

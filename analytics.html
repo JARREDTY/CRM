@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net 'unsafe-inline'">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="renderer/dashMain.css">
+  <link rel="stylesheet" href="renderer/sidebar.css">
+  <link rel="stylesheet" href="renderer/header.css">
+  <link rel="stylesheet" href="css/photon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <script defer src="renderer/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <title>Analytics</title>
+</head>
+<body>
+  <div class="grid-container">
+    
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar hidden">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span class="icon icon-basket"></span>STORE
+        </div>
+        <div>
+          <span class="icon icon-cancel"></span>
+        </div>
+      </div>
+
+      <ul class="sidebar-list">
+        <a href="analytics.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-layout"></span> Dashboard
+          </li>
+        </a>
+
+        <a href="products.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-archive"></span> Products
+          </li>
+        </a>
+
+        <a href="settings.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-cog"></span> Settings
+          </li>
+        </a>
+
+        <a href="index.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-users"></span> Customers
+          </li>
+        </a>
+
+        <a href="reports.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-newspaper"></span> Reports
+          </li>
+        </a>
+
+        <a href="inventory.html">
+          <li class="sidebar-list-item">
+            <span class="icon icon-basket"></span> Inventory
+          </li>
+        </a>
+
+        <li class="sidebar-list-item">
+          <span class="icon icon-list"></span> Categories
+        </li>
+
+      </ul>
+<hr><br><br><br><br>
+      <div class="grid-container2">
+        <div class="social-icon">
+          <span class="icon icon-instagram"></span>
+        </div>
+        <div class="social-icon">
+          <span class="icon icon-facebook"></span>
+        </div>
+        <div class="social-icon">
+          <span class="icon icon-linkedin"></span>
+        </div>
+      </div>
+      <br>
+      <p class="copyrightText">©Copyright 2024 Monk All Rights Reserved</p>
+    </aside>
+    <!-- End Sidebar -->
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon">
+        <span class="icon icon-menu" onclick="openSidebar()"></span>
+      </div>
+      <div class="header-left">
+        <span class="icon icon-search">search</span>
+      </div>
+      <div class="header-right">
+        <span class="icon icon-bell"></span>
+        <span class="icon icon-mail"></span>
+        <span class="icon icon-user"></span>
+      </div>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Main -->
+     <main class="main-container">
+
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <h3>PRODUCTS</h3>
+            <span class="icon icon-archive"></span>
+          </div>
+          <h1>249</h1>
+        </div>
+  
+        <div class="card">
+          <div class="card-inner">
+            <h3>CATEGORIES</h3>
+            <span class="icon icon-list"></span>
+          </div>
+          <h1>25</h1>
+        </div>
+  
+        <div class="card">
+          <div class="card-inner">
+            <h3>CUSTOMERS</h3>
+            <span class="icon icon-users"></span>
+          </div>
+          <h1>1590</h1>
+        </div>
+  
+        <div class="card">
+          <div class="card-inner">
+            <h3>ALERTS</h3>
+            <span class="icon icon-alert"></span>
+          </div>
+          <h1>56</h1>
+        </div>
+      </div>
+      <div class="charts">
+
+        <div class="charts-card">
+          <h2 class="chart-title">Top 5 Products</h2>
+          <div id="bar-chart"></div>
+        </div>
+        <div class="charts-card">
+          <h2 class="chart-title">Purchase and Sales Orders</h2>
+          <div id="area-chart"></div>
+        </div>
+      </div>
+     </main>
+    <!-- End Main -->
+  </div>
+  <script>        
+const btn2 = document.querySelectorAll('.sidebar-list-item');
+const sideList = document.querySelector('.sidebar-list')
+
+
+sideList.addEventListener('click', function(event) {
+    btn2.forEach(element => { 
+      element.classList.remove('active')
+    });
+    event.target.classList.add('active')
+  })
+
+const sidebarC = document.querySelector('.sidebar')
+const btn = document.querySelector('.icon-cancel')
+
+function openSidebar() {
+    sidebarC.classList.remove('hidden')
+    }
+
+function closeSidebar() {
+    sidebarC.classList.add('hidden')
+}
+
+
+btn.addEventListener('click', () => closeSidebar())
+    
+  </script>
+</html>

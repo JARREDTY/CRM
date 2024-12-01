@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+/* .window-content {
+    background-color: #bdb76b;
+} */
+
+/* .nav-group {
+    background-color: cornsilk;
+    width: 25%;
+    border-right: 3px solid rgb(150, 148, 28);
+    box-shadow: 20px 0 100px black;
+} */
+
+
+.table-striped {
+    position: relative;
+    padding: 2% 2% 2% 0; 
+}
+
+
+.closer {
+    padding: 1% 0 0 1%;
+    height: max-content;
+}
+
+.add-customer {
+    padding: 1%;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: lavender;
+}
+
