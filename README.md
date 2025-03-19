@@ -13,4 +13,6 @@ Physical Requirements:
 — A PC
 — Preferably windows 10+
 
+(for real-time analytics, integrate azure streaming analytics with the app...works great)
+
 ![Screenshot (8)](https://github.com/user-attachments/assets/2f7b082e-3b70-4d8d-88c2-b0cd506dcc50)
