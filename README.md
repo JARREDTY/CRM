@@ -6,6 +6,7 @@ Should you need to analyse or keep track of customers for client retention, This
 
 Funtcional Requirements:
 — Node.js (general download)
+— node modules
 — Visual Studio Code 
 — This Repository (The CRM App)
 
